@@ -38,7 +38,6 @@ class InputComponent extends Component {
 	}
 
 	onChange = (e) => {
-		console.log(this.props.noPostValue);
 		if (!this.props.noPostValue)
 			this.props.handleChange(this.props.name, e.target.value)
 	}

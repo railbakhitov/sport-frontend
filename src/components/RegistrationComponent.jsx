@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ApiService from '../scripts/ApiService.js'
 import InputComponent from "../components/service/InputComponent";
 import FormControlComponent from "../components/service/FormControlComponent";
+import NoticeComponent from "../components//NoticeComponent";
 
 class RegistrationComponent extends Component {
     constructor(props) {
@@ -24,7 +25,7 @@ class RegistrationComponent extends Component {
     render() {
         return(       
             <React.Fragment>
-                {this.state.isRegistrationComplete == false &&
+                {this.state.isRegistrationComplete === false &&
                 <div className="registration">
                     <p>Регистрация</p>
                     <FormControlComponent onSubmit={data => this.send(data)} render={
@@ -42,10 +43,8 @@ class RegistrationComponent extends Component {
                             }/>
                 </div>
                 }
-                {this.state.isRegistrationComplete == true &&
-                    <div className="registration-complete">
-                        <p className="registration-complete__text">Регистрация прошла успешно</p>
-                    </div>
+                {this.state.isRegistrationComplete === true &&
+                    <NoticeComponent type="registration"/>
                 }
             </React.Fragment>
         )

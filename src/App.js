@@ -9,18 +9,19 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-            <HeaderComponent/>
-            
-            <div className="main">
-              <div className="main__content">
-                <Switch>
-                  <Route path="/" exact component={MainPageComponent}/>
-                </Switch>
-              </div>
+        <div className="wrapper">
+          <HeaderComponent/>
+          <div className="main">
+            <div className="main__content">
+              <Switch>
+                <Route path="/" exact component={MainPageComponent}/>
+              </Switch>
             </div>
-    
-            <FooterComponent/>
-          </Router>
+          </div>
+        </div>
+        
+        <FooterComponent/>
+      </Router>
     );
   }
   

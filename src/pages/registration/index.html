@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("index.css");
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="registration">
+            <div class="registration__header">Регистрация</div>
+            <form style="margin-top: 30px;">
+                <div class="form-group">
+                    <label class="text">Имя</label>
+                    <input type="text" placeholder="Ваше имя" class="form-control form-control-sm">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyoneelse.</small> -->
+                </div>
+                <div class="form-group">
+                    <label class="text">Фамилия</label>
+                    <input type="text" placeholder="Ваша фамилия" class="form-control form-control-sm">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyoneelse.</small> -->
+                </div>
+                <div class="form-group">
+                    <label class="text">Почта</label>
+                    <input type="email" placeholder="Ваш e-mail" class="form-control form-control-sm">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyoneelse.</small> -->
+                </div>
+                <div class="form-group" style="position: relative;">
+                    <label class="text">Пароль</label>
+                    <input type="password" class="form-control form-control-sm">
+                    <a href="#" class="password-control"></a>
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyoneelse.</small> -->
+                </div>
+                <div class="form-group" style="position: relative;">
+                    <label class="text">Повторите пароль</label>
+                    <input type="password" class="form-control form-control-sm">
+                    <a href="#" class="password-control"></a>
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyoneelse.</small> -->
+                </div>
+                <div class="form-group">
+                    <label class="text">Ваши предпочтения</label>
+                    <div class="sport-container">
+                        <button type="button" class="btn btn-outline-primary btn-sm">Хоккей</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Футбол</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Баскетбол</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Волейбол</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Теннис</button>
+                    </div>
+                    <div class="sport-container">
+                        <button type="button" class="btn btn-outline-primary btn-sm">Плавание</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Гимнастика</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Бокс</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Дзюдо</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm">Алтлетика</button>
+                    </div>
+                </div>
+                <div class="role-container">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Участник</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Организатор</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Исполнитель</label>
+                      </div>
+                </div>
+                <div class="form-group"><button type="submit"
+                        class="btn btn-primary btn-registration">Зарегистрироваться</button></div>
+                <div style="text-align:center">
+                    <span style="font-size: 12px; color: #9F9F9F;">Уже есть аккаунт?</span>
+                    <a href="#" class="link">Войти</a>
+                </div>
+            </form>
+        </div>
+        <div class="image">
+            <img src="/sport-frontend/src/img/background-auth.png" height="770" width="700" />
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

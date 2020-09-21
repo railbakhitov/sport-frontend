@@ -1,17 +1,13 @@
-body {
-    width: 1366px;
-    height: 768px;
-}
-
-.wrapper {
+.main {
     display: flex;
     justify-content: center;
 }
 
-.registration {
+.registration-container {
+    background: #FFFFFF;
     margin-top: 50px;
     margin-left: 70px;
-    width: 380px;
+    width: 430px;
     height: 640px;
     background: #FFFFFF;
     opacity: 0.8;

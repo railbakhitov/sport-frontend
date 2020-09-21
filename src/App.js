@@ -11,13 +11,13 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <Route path="/registration" component={RegistrationComponent} />
+        <Route path="/authorization" component={AuthorizationComponent} />
         <div className="wrapper">
-          <HeaderComponent />
+          {/*      <HeaderComponent /> */}
           <div className="main">
             <div className="main__content">
               <Switch>
-                <Route path="/registration" component={RegistrationComponent} />
-                <Route path="/authorization" component={AuthorizationComponent} />
                 <Route path="/" exact component={MainPageComponent} />
               </Switch>
             </div>

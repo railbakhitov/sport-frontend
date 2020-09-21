@@ -17,7 +17,6 @@ class RegistrationComponent extends Component {
                         <div className="wrapper">
                             <div className="authorization">
                                 <div className="authorization__header">Авторизация</div>
-                                <form>
                                     <InputComponent text="Имя" placeholder="Ваше имя" style={{ marginTop: '30px' }} name="firstname" handleChange={handleChange} type="name" maxLength="20" required />
                                     <InputComponent text="Пароль" type="password" style={{ position: 'relative' }} handleChange={handleChange} maxLength="20" required />
                                     <div className="form-group"><button type="submit" className="btn btn-primary btn-authorization">Войти</button></div>
@@ -25,7 +24,6 @@ class RegistrationComponent extends Component {
                                         <span style={{ fontSize: '12px', color: '#9F9F9F' }}>У вас нет учетной записи?</span>
                                         <a href="#" className="link">Зарегистрироваться</a>
                                     </div>
-                                </form>
                             </div>
                             <div className="image">
                                 <img src="src/img/image-authorization.png" height="770" width="700" />

@@ -30,11 +30,10 @@ class RegistrationComponent extends Component {
                     <FormControlComponent onSubmit={data => this.send(data)} render={
                         handleChange => (
                             <React.Fragment>
-                                <div className="wrapper">
-                                    <div className="registration">
+                                <div className="main">
+                                    <div className="registration-container">
                                         <div className="registration__header">Регистрация</div>
-                                        <form style={{ marginTop: '30px' }}>
-                                            <InputComponent text="Имя" placeholder="Ваше имя" name="firstname" handleChange={handleChange} type="name" maxLength="20" required />
+                                            <InputComponent text="Имя" placeholder="Ваше имя" name="firstname" style={{ marginTop: '30px' }} handleChange={handleChange} type="name" maxLength="20" required />
                                             <InputComponent text="Фамилия" placeholder="Ваша фамилия" name="lastname" handleChange={handleChange} type="name" maxLength="20" required />
                                             <InputComponent text="Почта" type="email" placeholder="Ваш e-mail" handleChange={handleChange}  maxLength="20" required />
 {/*                                             <div className="form-group" style={{ position: 'relative' }}>
@@ -81,7 +80,6 @@ class RegistrationComponent extends Component {
                                                 <span style={{ fontSize: "12px", color: "#9F9F9F" }}>Уже есть аккаунт?</span>
                                                 <a href="#" className="link">Войти</a>
                                             </div>
-                                        </form>
                                     </div>
                                     <div className="image">
                                         <img src="/sport-frontend\src\img\background-auth.png" height="770" width="700" />

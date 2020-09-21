@@ -4,6 +4,7 @@ import InputComponent from "../components/service/InputComponent";
 import FormControlComponent from "../components/service/FormControlComponent";
 import NoticeComponent from "../components//NoticeComponent";
 import '../css/registration.css';
+import background from '../img/background-auth.png';
 
 class RegistrationComponent extends Component {
     constructor(props) {
@@ -82,7 +83,7 @@ class RegistrationComponent extends Component {
                                             </div>
                                     </div>
                                     <div className="image">
-                                        <img src="/sport-frontend\src\img\background-auth.png" height="770" width="700" />
+                                        <img src={background} height="770" width="700" />
                                     </div>
                                 </div>
                             </React.Fragment>

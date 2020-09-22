@@ -13,16 +13,16 @@ class App extends React.Component {
       <Router>
         <Route path="/registration" component={RegistrationComponent} />
         <Route path="/authorization" component={AuthorizationComponent} />
-        <div className="wrapper">
+        {/* <div className="wrapper"> */}
           {/*      <HeaderComponent /> */}
-          <div className="main">
-            <div className="main__content">
+{/*           <div className="main">
+            <div className="main__content"> */}
               <Switch>
                 <Route path="/" exact component={MainPageComponent} />
               </Switch>
-            </div>
+{/*             </div>
           </div>
-        </div>
+        </div> */}
 
         <FooterComponent />
       </Router>
